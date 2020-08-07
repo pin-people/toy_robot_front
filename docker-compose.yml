@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  app:
+    command: bin/rails server -b 0.0.0.0 -p 3000
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/home/robot_toy_web/'

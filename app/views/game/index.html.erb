@@ -1,0 +1,37 @@
+<div>
+  <h1>Robot Toy</h1>
+  <% if @error %>
+    <h3><%= @error %></h3>
+  <% end %>
+  <table>
+    <% @game.board_width.times do |line_index| %>
+      <tr>
+        <% @game.board_height.times do |column_index| %>
+          <td>
+            <%= image_tag('direction.png', class: @game.facing.to_s.downcase) if robot_place? @game, line_index, column_index %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+  <div>
+    <%= form_tag game_path, method: :put do %>
+      <%= hidden_field_tag :current_line, @game.position_line %>
+      <%= hidden_field_tag :current_column, @game.position_column %>
+      <%= hidden_field_tag :current_orientation, @game.facing %>
+      <%= select_tag :command, options_for_select(game_commands_options), onchange: 'changeCommandSelect(this)' %>
+      <%= text_field_tag :place %>
+      <button id="">GO!</button>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  function changeCommandSelect(element) {
+    const place_field = document.getElementById('place');
+    if(element.value === '1')
+      place_field.style.display = 'inline-block';
+    else
+      place_field.style.display = 'none';
+  }
+</script>
