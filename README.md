@@ -41,9 +41,7 @@ RIGHT
 
 * `LEFT` and `RIGHT` will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
 
-* `REPORT` will announce the X,Y and F of the robot. This can be in any form, but standard output is sufficient.
-
-* A robot that is not on the table can choose to ignore the `MOVE`, `LEFT`, `RIGHT` and `REPORT` commands.
+* A robot that is not on the table can choose to ignore the `MOVE`, `LEFT` and `RIGHT` commands.
 
 
 ### Constraints
@@ -55,7 +53,7 @@ RIGHT
 
 ### Challenge
 
-You are expected to transform the frontend of the application freely in any way you think would contribute to the construction of a better, more intuitive UI.
+The given frontend provides a raw table and positions the robot on that table according to the commands passed to it. The elements have no style at all, you are expected to transform the frontend of the application freely in any way you think would contribute to the construction of a better, more intuitive UI.
 
 ### Deliverables
 
