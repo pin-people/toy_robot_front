@@ -10,15 +10,13 @@
 
 ## Description
 
-The provided backend is a simple API that defines the following rules:
-
 * The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5x5.
 
 * There are no other obstructions on the table surface.
 
 * The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
-* All commands should be executed by the API which returns the expect result (can we trust it?).
+* All commands should be sent to the API which returns the expect result (can we trust it?).
 
 In order to control the Robot the user should be able to interact with it in the following manner:
 
