@@ -10,7 +10,7 @@
 
 ## Description
 
-The provided backend is a simple web application that is defined the following rules:
+The provided backend is a simple API that defines the following rules:
 
 * The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5x5.
 
@@ -18,20 +18,13 @@ The provided backend is a simple web application that is defined the following r
 
 * The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
-Create an application that can read in commands of the following form:
+In order to control the Robot the user should be able to interact with it in the following manner:
 
 ### Behavior
 
 The available commands are the following:
 
-```
-PLACE X,Y,F
-MOVE
-LEFT
-RIGHT
-```
-
-* `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
+* `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST (all those parameters should be given by the user).
 
 * The origin (0,0) can be considered to be the NORTH WEST most corner.
 
@@ -53,7 +46,9 @@ RIGHT
 
 ### Challenge
 
-The given frontend provides a raw table and positions the robot on that table according to the commands passed to it. The elements have no style at all, you are expected to transform the frontend of the application freely in any way you think would contribute to the construction of a better, more intuitive UI.
+You are expected to create a simple FrontEnd application integrated with our API to execute the commands (beware the BackEnd developers left unsolved bugs!!!), feel free to use any tools you are most confortable with and to be creative on the layout.
+
+The API documentation can be found [here](https://app.swaggerhub.com/apis/Pin-People/ToyRobotAPI/1.0.0) and its base URL is https://toy-robot-api.herokuapp.com.
 
 ### Deliverables
 
@@ -62,23 +57,5 @@ build your solution.
 
 Please engineer your solution to a standard you consider suitable for
 production.
-
-## Setup
-
-To run the project you should have ruby or docker and docker-compose installed.
-
-After that run the following commands on the directory of the project:
-
-
-```
-# If you installed docker:
-docker-compose up
-```
-OR
-```
-# If you installed ruby:
-bundle install
-rails server
-```
 
 Have fun!!!
