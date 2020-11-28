@@ -46,7 +46,7 @@ The available commands are the following:
 
 ### Challenge
 
-You are expected to create a simple FrontEnd application integrated with our API which processes the commands and return the expected result (beware the BackEnd developers left some surprise bugs!!!). Feel free to use any tools you are most confortable with and to be creative.
+You are expected to create a simple FrontEnd application integrated with our API which processes the commands and return the expected result (disclaimer: the BackEnd developers are so sweet, they left some ~gifts~ bugs to you!!!). Feel free to use any tools you are most comfortable with and to be creative.
 
 The API documentation can be found [here](https://app.swaggerhub.com/apis/Pin-People/ToyRobotAPI/1.0.0) and its base URL is https://toy-robot-api.herokuapp.com.
 
