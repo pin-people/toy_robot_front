@@ -18,6 +18,8 @@ The provided backend is a simple API that defines the following rules:
 
 * The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
+* All commands should be executed by the API which returns the expect result (can we trust it?).
+
 In order to control the Robot the user should be able to interact with it in the following manner:
 
 ### Behavior
@@ -46,7 +48,7 @@ The available commands are the following:
 
 ### Challenge
 
-You are expected to create a simple FrontEnd application integrated with our API to execute the commands (beware the BackEnd developers left unsolved bugs!!!), feel free to use any tools you are most confortable with and to be creative on the layout.
+You are expected to create a simple FrontEnd application integrated with our API which processes the commands and return the expected result (beware the BackEnd developers left some surprise bugs!!!). Feel free to use any tools you are most confortable with and to be creative.
 
 The API documentation can be found [here](https://app.swaggerhub.com/apis/Pin-People/ToyRobotAPI/1.0.0) and its base URL is https://toy-robot-api.herokuapp.com.
 
